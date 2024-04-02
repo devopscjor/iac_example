@@ -17,3 +17,9 @@ module "bucket_module_2" {
   env = var.env
   bucket_name = "bucket-module-2"
 }
+
+module "bucket_module_3" {
+  source = "../modules/bucket"
+  env = var.env
+  bucket_name = "bucket-module-3"
+}
