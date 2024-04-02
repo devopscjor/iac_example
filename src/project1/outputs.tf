@@ -12,3 +12,8 @@ output "bucket_id_2" {
   value = module.bucket_module_2.bucket_id
   description = "el id del bucket del module 2"
 }
+
+output "bucket_id_3" {
+  value = module.bucket_module_3.bucket_id
+  description = "el id del bucket del module 3"
+}
