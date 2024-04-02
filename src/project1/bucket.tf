@@ -5,3 +5,15 @@
 #     Environment = var.env
 #   }
 # }
+
+module "bucket_module" {
+  source = "../modules/bucket"
+  env = var.env
+  bucket_name = "bucket-module"
+}
+
+module "bucket_module_2" {
+  source = "../modules/bucket"
+  env = var.env
+  bucket_name = "bucket-module-2"
+}
